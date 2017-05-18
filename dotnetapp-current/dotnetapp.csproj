@@ -13,14 +13,13 @@
   <ItemGroup>
     <Reference Include="pisdk">
       <HintPath>Lib\pisdk.dll</HintPath>
+    </Reference>
+    <Reference Include="PISDKCommon">
+      <HintPath>Lib\PISDKCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="RTDB.SDK">
       <HintPath>Lib\RTDB.SDK.dll</HintPath>
     </Reference>
-      <Reference Include="PISDKCommon">
-        <HintPath>Lib\PISDKCommon.dll</HintPath>
-      </Reference>
-        <Reference Include="RTDB.SDK">
-          <HintPath>Lib\RTDB.SDK.dll</HintPath>
-        </Reference>
   </ItemGroup>
 
 </Project>
