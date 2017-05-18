@@ -1,3 +1,4 @@
+using RTDB.SDK;
 using System;
 using System.Runtime.InteropServices;
 using static System.Console;
@@ -7,18 +8,41 @@ public static class Program
   public static void Main(string[] args) 
   {
         string message = "Dotnet-bot: Welcome to using .NET Core!";
-          
+         
+        
+
         if (args.Length > 0) 
         {
           message = String.Join(" ",args);
         }
 
-        WriteLine(GetBot(message));
+        WriteLine(GetBot(PiTest(message)));
         WriteLine("**Environment**");
         WriteLine($"Platform: .NET Core 1.1");
         WriteLine($"OS: {RuntimeInformation.OSDescription}");
         WriteLine();
   }
+
+
+  public static string PiTest(string tag)
+    {
+        RTDB.SDK.RTDBInterface piconnection = RTDB.SDK.RTDBInterface.CreateInstance("PI", "10.90.36.4", "", "");
+        piconnection.Connect();
+        iDATA data = new iDATA();
+        data.Tagname = tag;
+        data.DataType = DataType.Double;
+        int code = piconnection.GetRtData(ref data);
+        if (code == 0)
+        {
+            return  "Success!!!  " + data.TimeStamp.ToString() + "======" + Convert.ToDouble(data.Value);
+        }
+        else
+        {
+            return "false!!! Error Code: " + code;
+        }
+
+        return "testtttttttttttt==================================";
+    }
 
   public static string GetBot(string message) 
   {
