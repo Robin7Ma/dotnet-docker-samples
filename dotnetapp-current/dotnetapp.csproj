@@ -11,11 +11,35 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="pisdk">
-      <HintPath>Lib\pisdk.dll</HintPath>
+    <Reference Include="OSIsoft.AXMDBTREE">
+      <HintPath>Lib\OSIsoft.AXMDBTREE.dll</HintPath>
     </Reference>
-    <Reference Include="PISDKCommon">
-      <HintPath>Lib\PISDKCommon.dll</HintPath>
+    <Reference Include="OSIsoft.AXPISDKCTL">
+      <HintPath>Lib\OSIsoft.AXPISDKCTL.dll</HintPath>
+    </Reference>
+    <Reference Include="OSIsoft.MDBTree">
+      <HintPath>Lib\OSIsoft.MDBTree.dll</HintPath>
+    </Reference>
+    <Reference Include="OSIsoft.PISDK">
+      <HintPath>Lib\OSIsoft.PISDK.dll</HintPath>
+    </Reference>
+    <Reference Include="OSIsoft.PISDK.Controls.MDBTreeNet">
+      <HintPath>Lib\OSIsoft.PISDK.Controls.MDBTreeNet.dll</HintPath>
+    </Reference>
+    <Reference Include="OSIsoft.PISDK.Controls.PIArchiveEditor">
+      <HintPath>Lib\OSIsoft.PISDK.Controls.PIArchiveEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="OSIsoft.PISDK.Controls.PISDKCtrlDlg">
+      <HintPath>Lib\OSIsoft.PISDK.Controls.PISDKCtrlDlg.dll</HintPath>
+    </Reference>
+    <Reference Include="OSIsoft.PISDKCommon">
+      <HintPath>Lib\OSIsoft.PISDKCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="OSIsoft.PISDKCtl">
+      <HintPath>Lib\OSIsoft.PISDKCtl.dll</HintPath>
+    </Reference>
+    <Reference Include="OSIsoft.PISDKDlg">
+      <HintPath>Lib\OSIsoft.PISDKDlg.dll</HintPath>
     </Reference>
     <Reference Include="RTDB.SDK">
       <HintPath>Lib\RTDB.SDK.dll</HintPath>

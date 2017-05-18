@@ -40,8 +40,7 @@ public static class Program
         {
             return "false!!! Error Code: " + code;
         }
-
-        return "testtttttttttttt==================================";
+  
     }
 
   public static string GetBot(string message) 
